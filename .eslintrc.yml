@@ -1,0 +1,49 @@
+parserOptions:
+  ecmaVersion: "2016"
+extends: "eslint:recommended"
+env:
+  mocha: true
+  node: true
+rules:
+  arrow-body-style: ["error", "as-needed"]
+  comma-dangle: ["error", "always-multiline"]
+  eqeqeq: ["error", "smart"]
+  indent: ["error", 2]
+  no-confusing-arrow:
+    - "error"
+    - allowParens: true
+  no-eval: "error"
+  no-extra-bind: "error"
+  no-implied-eval: "error"
+  no-mixed-requires: "error"
+  no-multi-spaces: "error"
+  no-useless-concat: "error"
+  no-useless-return: "error"
+  no-var: "error"
+  one-var: ["error", "never"]
+  prefer-const: "error"
+  prefer-spread: "error"
+  radix: "error"
+  require-await: "error"
+  spaced-comment:
+    - "error"
+    - "always"
+    - block:
+        balanced: true
+        exceptions: ["*"]
+  valid-jsdoc:
+    - "error"
+    - prefer:
+        arg: "param"
+        argument: "param"
+        returns: "return"
+      preferType:
+        Boolean: "boolean"
+        Number: "number"
+        object: "Object"
+        String: "string"
+      requireReturn: false
+      requireReturnType: true
+      requireParamDescription: false
+      requireReturnDescription: false
+  yoda: "error"

@@ -1,0 +1,36 @@
+{
+  "name": "svg-sprite-webpack-plugin",
+  "version": "1.0.0",
+  "description": "A Webpack plugin to extract SVGs into a cacheable sprite file",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "icon",
+    "loader",
+    "svg",
+    "sprite",
+    "todaytix"
+  ],
+  "author": "Jeremy Tice <jeremy.tice@todaytix.com>",
+  "license": "MIT",
+  "repository": "TodayTix/svg-sprite-webpack-plugin",
+  "engines": {
+    "node": ">=6.0 <7"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.0"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "lodash.find": "^4.6.0",
+    "lodash.isempty": "^4.4.0",
+    "lodash.reduce": "^4.6.0",
+    "svg-sprite-loader": "^0.2.0",
+    "webpack-sources": "^0.1.4"
+  }
+}
