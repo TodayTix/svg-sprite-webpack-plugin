@@ -131,7 +131,7 @@ yarn install
 Make sure any code passes the linter before submitting a PR!
 
 ```sh
-npm run lint
+yarn run lint
 ```
 
 Eventually we'll have tests, too. I promise. It'll happen.
