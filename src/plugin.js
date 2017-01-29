@@ -1,6 +1,7 @@
 const crypto = require('crypto');
 const isEmpty = require('lodash.isempty');
 const reduce = require('lodash.reduce');
+const values = require('lodash.values');
 const { RawSource, ReplaceSource } = require('webpack-sources');
 const { FILENAME_REPLACE_STRING } = require('./constants');
 
@@ -118,7 +119,7 @@ module.exports = class IconPlugin {
       // NOTE(Jeremy):
       // Leave this as a hex encoding. Base64 sometimes includes slashes, which
       // are no bueno in filenames (at least, without additional escaping).
-      md5sum.update(Object.values(this.icons).join('\n')).digest('hex')
+      md5sum.update(values(this.icons).join('\n')).digest('hex')
     );
   }
 };
