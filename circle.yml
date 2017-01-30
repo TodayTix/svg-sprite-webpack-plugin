@@ -3,6 +3,8 @@
 machine:
   environment:
     PATH: "${PATH}:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+  node:
+    version: 6.9.4
 
 dependencies:
   override:
@@ -12,4 +14,5 @@ dependencies:
 
 test:
   override:
+    - yarn test
     - yarn run lint

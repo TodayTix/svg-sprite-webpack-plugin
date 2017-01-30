@@ -128,13 +128,12 @@ npm install --global yarn
 yarn install
 ```
 
-Make sure any code passes the linter before submitting a PR!
+Make sure any code passes tests and the linter before submitting a PR!
 
 ```sh
+yarn test
 yarn run lint
 ```
-
-Eventually we'll have tests, too. I promise. It'll happen.
 
 ## Meta
 
