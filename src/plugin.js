@@ -59,6 +59,8 @@ module.exports = class IconPlugin {
           return;
         }
 
+        const publicPath = compiler.options.output.publicPath || '/static/';
+
         chunks.forEach((chunk) => {
           chunk.files.forEach((name) => {
             compilation.assets[name] = replaceAll(
@@ -70,7 +72,7 @@ module.exports = class IconPlugin {
               // I would've just used compiled.options.output.publicPath here,
               // but apparently <use> tags don't yet support cross-origin
               // requests. This should be made configurable.
-              `/static/${this.getFilename()}`
+              `${publicPath}${this.getFilename()}`
             );
           });
         });

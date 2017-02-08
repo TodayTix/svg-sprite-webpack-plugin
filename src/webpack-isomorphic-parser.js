@@ -19,7 +19,7 @@ const iconsFileRE = /icons-[a-f0-9]+\.svg/i;
  */
 const iconsReplaceRE = new RegExp(FILENAME_REPLACE_STRING, 'g');
 
-module.exports = (module, options) => {
+module.exports = (module, options = { path: '/static' }) => {
   // NOTE(Jeremy):
   // We're replicating the functionality of the plugin's string replace
   // here, because server-side doesn't use the js file that IconPlugin
@@ -34,6 +34,8 @@ module.exports = (module, options) => {
     return module.source;
   }
 
+  const publicPath = options.assets_base_url || '/static/';
+
   // NOTE(Jeremy):
   // Ideally, this replace would happen inside IconPlugin, but I couldn't
   // find a way to tie into it from here. Maybe someday we can revisit
@@ -41,6 +43,6 @@ module.exports = (module, options) => {
   // be the least open-source-friendly part of this package.
   return module.source.replace(
     iconsReplaceRE,
-    `/static/${iconAsset.name}`
+    `${publicPath}${iconAsset.name}`
   );
 };
