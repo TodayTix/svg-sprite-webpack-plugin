@@ -103,7 +103,7 @@ module.exports = class IconPlugin {
       require.resolve('./loader'),
       // TODO(Jeremy):
       // SVGO loader to optimize assets, or allow passing in a loader.
-      'svg-sprite?extract=true',
+      'svg-sprite-loader?extract=true',
     ].join('!');
   }
 
