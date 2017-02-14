@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.2
+
+**Bugfixes**
+
+* Added the `-loader` suffix back in for Webpack 2 support.
+
 ## 1.0.1
 
 **Bugfixes**
