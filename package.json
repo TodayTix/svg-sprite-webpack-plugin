@@ -23,9 +23,9 @@
     "node": ">=6.0 <7"
   },
   "devDependencies": {
-    "ava": "^0.17.0",
-    "eslint": "^3.14.0",
-    "rimraf": "^2.5.4",
+    "ava": "^0.18.2",
+    "eslint": "^3.16.1",
+    "rimraf": "^2.6.1",
     "sinon": "^1.17.7",
     "webpack": "^1.14.0"
   },
@@ -35,7 +35,7 @@
     "lodash.isempty": "^4.4.0",
     "lodash.reduce": "^4.6.0",
     "lodash.values": "^4.3.0",
-    "svg-sprite-loader": "^0.2.0",
+    "svg-sprite-loader": "^0.3.0",
     "webpack-sources": "^0.1.4"
   }
 }
