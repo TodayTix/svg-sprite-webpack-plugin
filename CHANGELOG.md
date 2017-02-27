@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.3
+
+**Maintenance**
+
+* Updated dependencies
+  * `svg-sprite-loader` 0.2.0 -> 0.3.0
+  * Also bumped dev dependencies for test running
+
 ## 1.0.2
 
 **Bugfixes**
