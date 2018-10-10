@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": "TodayTix/svg-sprite-webpack-plugin",
   "engines": {
-    "node": ">=6.0 <7"
+    "node": ">=6.0 <=8"
   },
   "devDependencies": {
     "ava": "^0.18.2",
