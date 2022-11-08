@@ -27,7 +27,7 @@
     "eslint": "^3.16.1",
     "rimraf": "^2.6.1",
     "sinon": "^1.17.7",
-    "webpack": "^1.14.0"
+    "webpack": "^5.74.0"
   },
   "dependencies": {
     "cheerio": "^0.22.0",
@@ -35,7 +35,7 @@
     "lodash.isempty": "^4.4.0",
     "lodash.reduce": "^4.6.0",
     "lodash.values": "^4.3.0",
-    "svg-sprite-loader": "^0.3.0",
+    "svg-sprite-loader": "^6.0.11",
     "webpack-sources": "^0.1.4"
   }
 }
